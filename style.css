@@ -1,78 +1,151 @@
-body {
+* {
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
-}
-.wrapper {
-    height: 2500px;
+    
     
 }
-.nav {
-    background-color: rgb(8, 7, 8);
+.wrapper {
+    
+    height: 2500px;
+}
+.background {
+    opacity: 0.8;
     position: absolute;
     left: 0px;
-    top: -5px;
-    width: 1448px;
+    top: 0px;
+    width: 100%;
+    height: 2500px;
+    
+  }
+  
+nav {
+    
+    
+    background-color: rgb(8, 7, 8);
+    position: absolute;
+    
+    
+    width: 100%;
     height: 146px;
-    z-index: 41;
+    z-index: 1;
+
   }
-#book {
-    font-size: 54px;
-    font-family: becker-gothics-tuscan, sans-serif;
-    font-weight: 400;
+  a {
+      text-decoration: none;
+      color: rgb(220, 218, 217);
+  }
+  a:hover {
+      text-decoration: underline;
+  }
+  ul {
+      list-style: none;
+  }
+  .menu li {
+    padding: 15px 5px;
+  }
+  .menu { 
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      color: rgb(220, 218, 217);
+      font-size: 45px;
+        font-family: becker-gothics-tuscan, sans-serif;
+        font-weight: 400;
     font-style: normal;
-    color: rgb(220, 218, 217);
-    line-height: 1.2;
-    position: absolute;
-    left: 254.938px;
-    top: 0px;
-    z-index: 43;
+
   }
-  #info {
-    font-size: 54px;
-    font-family: becker-gothics-tuscan, sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    color: rgb(220, 218, 217);
-    line-height: 1.2;
-    position: absolute;
-    left: 440.938px;
-    top: 0px;
-    z-index: 43;
-  }
+
+
+ 
   
 .logo {
-    background-image: url("Layer 1.png");
-    position: absolute;
-    left: 645px;
-    top: 4px;
-    width: 145px;
-    height: 129px;
+    position: relative;
+    top : -5px;
+    width: 125px;
+    height: 109px;
     z-index: 42;
   }
+
+@media all and (min-width: 640px){
+    .menu {
+        justify-content: center;
+    }
+}
   
-  #contact {
+
+
+
+  
+  /* MASTERHEAD */
+.masterhead {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    
+    
+    
+
+}
+  .mpicture {
+    object-fit: cover;
+    left: 0px;
+    top: 141px;
+    width: 100%;
+    height: 840px;
+    
+  }
+
+  .button {
+    border-radius: 10px;
+    background-color: rgb(8, 7, 8);
+    position: absolute;
+    
+    width: 381px;
+    height: 64px;
+    z-index: 1;
+  }
+  .services {
     font-size: 54px;
-    font-family: becker-gothics-tuscan, sans-serif;
-    font-weight: 400;
-    font-style: normal;
+    font-family: "Copperplate";
     color: rgb(220, 218, 217);
+    font-weight: bold;
     line-height: 1.2;
     position: absolute;
-    left: 811.938px;
+    left: 56px;
     top: 0px;
-    z-index: 44;
+   
   }
-  #map {
-    font-size: 54px;
-    font-family: becker-gothics-tuscan, sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    color: rgb(220, 218, 217);
-    line-height: 1.2;
+  
+.info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.aboutme {
+  border-radius: 10px;
+  background-color: rgb(8, 7, 8);
+  
+  margin-top: 25px;
+  width: 65%;
+  height: 300px;
+  z-index: 29;
+}
+
+ footer {
+    background-color: rgb(0, 0, 0);
     position: absolute;
-    left: 1100.938px;
-    top: 0px;
-    z-index: 44;
+    bottom: -1680px;
+    width: 100%;
+    height: 202px;
+
   }
+  
+  
+  
+  
+
   
   
