@@ -1,4 +1,78 @@
+body {
+    margin: 0;
+    box-sizing: border-box;
+}
 .wrapper {
     height: 2500px;
-    background-color: red;
+    
 }
+.nav {
+    background-color: rgb(8, 7, 8);
+    position: absolute;
+    left: 0px;
+    top: -5px;
+    width: 1448px;
+    height: 146px;
+    z-index: 41;
+  }
+#book {
+    font-size: 54px;
+    font-family: becker-gothics-tuscan, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: rgb(220, 218, 217);
+    line-height: 1.2;
+    position: absolute;
+    left: 254.938px;
+    top: 0px;
+    z-index: 43;
+  }
+  #info {
+    font-size: 54px;
+    font-family: becker-gothics-tuscan, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: rgb(220, 218, 217);
+    line-height: 1.2;
+    position: absolute;
+    left: 440.938px;
+    top: 0px;
+    z-index: 43;
+  }
+  
+.logo {
+    background-image: url("Layer 1.png");
+    position: absolute;
+    left: 645px;
+    top: 4px;
+    width: 145px;
+    height: 129px;
+    z-index: 42;
+  }
+  
+  #contact {
+    font-size: 54px;
+    font-family: becker-gothics-tuscan, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: rgb(220, 218, 217);
+    line-height: 1.2;
+    position: absolute;
+    left: 811.938px;
+    top: 0px;
+    z-index: 44;
+  }
+  #map {
+    font-size: 54px;
+    font-family: becker-gothics-tuscan, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: rgb(220, 218, 217);
+    line-height: 1.2;
+    position: absolute;
+    left: 1100.938px;
+    top: 0px;
+    z-index: 44;
+  }
+  
+  
