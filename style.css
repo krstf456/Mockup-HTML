@@ -6,22 +6,19 @@
     
 }
 .wrapper {
-    
-    height: 2500px;
+    background-image: url("/pictures/background.jpg");
+  background-color: #cccccc;
+  
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+
 }
-.background {
-    opacity: 0.8;
-    position: absolute;
-    left: 0px;
-    top: 0px;
-    width: 100%;
-    height: 2500px;
-    
-  }
+
+
   
 nav {
-    
-    
     background-color: rgb(8, 7, 8);
     position: absolute;
     
@@ -107,7 +104,7 @@ nav {
     height: 64px;
     z-index: 1;
   }
-  .services {
+  .servicesbutton {
     font-size: 54px;
     font-family: "Copperplate";
     color: rgb(220, 218, 217);
@@ -118,11 +115,12 @@ nav {
     top: 0px;
    
   }
-  
+  /* ABOUT ME */
 .info {
     display: flex;
     justify-content: center;
     align-items: center;
+    
 }
 .aboutme {
   border-radius: 10px;
@@ -132,7 +130,109 @@ nav {
   width: 65%;
   height: 300px;
   z-index: 29;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  
 }
+.aboutmetitle{
+    font-size: 54px;
+    font-family: "Hoefler Text";
+    color: rgb(220, 218, 217);
+    font-style: italic;
+    line-height: 1.2;
+    margin-bottom: 25px;
+}
+.aboutmetext{
+    font-size: 30px;
+    font-family: "Trebuchet MS";
+    color: rgb(220, 218, 217);
+    line-height: 1.2;
+    margin: 0 15px;
+}
+/* SERVICES */
+.services {
+display: flex;
+justify-content: center;
+margin-top: 25px;
+position: relative;
+
+
+}
+.drifttaxi {
+   display: flex; 
+   align-items: flex-end;
+   justify-content: center;
+   
+   
+}
+ .drifttaxititle{
+    background-color: rgb(214, 213, 4);
+    position: absolute;
+    top: 45px;
+    margin-left: -75px;
+
+    width: 320px;
+    height: 66px;
+   
+} 
+.teachingtitle{
+    background-color: rgb(214, 213, 4);
+    position: absolute;
+    top: 45px;
+    margin-left: 75px;
+    
+    width: 320px;
+    height: 66px;
+   
+} 
+  
+.book {
+    border-radius: 10px;
+    background-color: rgb(0, 0, 0);
+    position: absolute;
+    bottom: 40px;
+    width: 245px;
+    height: 70px;
+    
+    
+  }
+  .booking {
+    font-size: 54px;
+    font-family: "Copperplate";
+    color: rgb(220, 218, 217);
+    font-weight: bold;
+    line-height: 1.2;
+    position: absolute;
+    left: 46px;
+    top: 2px;
+  }
+.servicetitle {
+    font-size: 54px;
+    font-family: "Copperplate";
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    line-height: 1.2;
+    position: absolute;
+    
+    top: 2px;
+}
+.lefttext {
+    margin-left: 15px;
+}
+  
+.teaching {
+    display: flex; 
+   align-items: flex-end;
+   justify-content: center;
+}
+
+
+.contactme {
+    height: 200px;
+    background: red;
+} 
 
  footer {
     background-color: rgb(0, 0, 0);
