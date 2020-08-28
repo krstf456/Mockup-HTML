@@ -20,8 +20,10 @@
 
   
 nav {
+    display: flex;
     background-color: rgb(8, 7, 8);
-    position: absolute;
+    align-items: center;
+    justify-content: space-between;
     
     
     width: 100%;
@@ -29,6 +31,7 @@ nav {
     z-index: 1;
 
   }
+  
   a {
       text-decoration: none;
       color: rgb(220, 218, 217);
@@ -44,7 +47,7 @@ nav {
   }
   .menu { 
       display: flex;
-      flex-wrap: wrap;
+      
       justify-content: center;
       align-items: center;
       color: rgb(220, 218, 217);
@@ -58,30 +61,38 @@ nav {
 
  
   
-.logo {
-    position: relative;
-    top : -5px;
+.logotype {
+    
     width: 125px;
     height: 109px;
-    z-index: 42;
+    
   }
-
+.toogle {
+    display: none;
+}
 
 @media screen and (max-width:880px) {
     .menu {
         font-size: 24px;
+        
+        
     }
-    .logo {
+    .logotype {
         width: 100px;
         height: 90px;
-        padding-bottom: 5px;
+        
     }
     nav {
         height: 100px;
     }
     
+    
 }
-  
+@media screen and (max-width:500px) {
+.item {
+    display: none;
+}
+}
 
 
 
@@ -171,24 +182,23 @@ nav {
 }
 /* SERVICES */
 .services {
-/* display: flex;
+display: flex;
 justify-content: center;
 margin-top: 25px;
-position: relative; */
-display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    height: 500px;
+position: relative;
+
     
 
 
+}
+.product {
+    width: 100%;
 }
 .drifttaxi {
    display: flex; 
    align-items: flex-end;
    justify-content: center;
+  
    
    
 }
@@ -215,7 +225,7 @@ display: grid;
   
 .book {
     border-radius: 10px;
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(8, 7, 8);
     position: absolute;
     bottom: 40px;
     width: 245px;
@@ -224,7 +234,7 @@ display: grid;
     
   }
   .booking {
-    font-size: 54px;
+    font-size: 3em;
     font-family: "Copperplate";
     color: rgb(220, 218, 217);
     font-weight: bold;
@@ -236,7 +246,7 @@ display: grid;
 .servicetitle {
     font-size: 54px;
     font-family: "Copperplate";
-    color: rgb(0, 0, 0);
+    color: rgb(8, 7, 8);
     font-weight: bold;
     line-height: 1.2;
     position: absolute;
@@ -251,11 +261,15 @@ display: grid;
     display: flex; 
    align-items: flex-end;
    justify-content: center;
+   
 }
 
 @media screen and (max-width:880px) {
     .services {
-        grid-template-columns: 1fr;
+        flex-direction: row;
+    }
+    .servicetitle {
+        
     }
     
     
@@ -286,7 +300,7 @@ display: grid;
     text-align: center;
     height: 500px;
     max-width: 85%;
-    background-color: white;
+    background-color: rgb(220, 218, 217);
 } 
 .left {
     height: 100%;
@@ -294,14 +308,18 @@ display: grid;
     background-size: cover;
 }
 .right {
-    padding: 25px 40px;
     
+   padding: 0 25px; 
     
 }
 .contactmetitle {
     position: relative;
     padding-bottom: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 50px;
+    font-family: "Copperplate";
+    color: rgb(8, 7, 8);
+    font-weight: bold;
+    line-height: 1.2;
     
 }
 .contactmetitle:after {
@@ -313,7 +331,7 @@ display: grid;
     height: 4px;
     width: 50px;
     border-radius: 2px;
-    background-color: yellow;
+    background-color: rgb(214, 213, 4);
 }
 .field {
     width: 100%;
@@ -330,7 +348,7 @@ display: grid;
 }
 .field:focus {
     background-color: #fff;
-    border: 2px solid yellow;
+    border: 2px solid rgb(214, 213, 4);
 }
 .area {
     height: 150px;
@@ -342,12 +360,19 @@ display: grid;
     border: none;
     transition: .3s;
     font-size: 1.1rem;
-    background-color: yellow;
+    background-color: rgb(214, 213, 4);
+    font-family: "Copperplate";
+    color: rgb(8, 7, 8);
+    font-weight: bold;
 }
 
 @media screen and (max-width:880px) {
     .contactme {
         grid-template-columns: 1fr;
+    }
+    .contactmetitle {
+        margin-bottom: 10px;
+
     }
     .left {
         height: 200px;
@@ -357,7 +382,7 @@ display: grid;
         
     }
     .field {
-        width: 50%;
+        
     }
     .area { 
         height: 50px;
@@ -374,19 +399,23 @@ display: grid;
     
     
 }
-.map {
-    height: 400px;
-    background: red;
-}
 
-/* footer {
+
+ footer {
     background-color: rgb(0, 0, 0);
-    position: absolute;
-    bottom: -1680px;
+    margin-top: 35px;
     width: 100%;
     height: 202px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-  } */
+ }
+ .fab { 
+     color: rgb(214, 213, 4);
+     font-size: 55px;
+     margin-left: 30px;
+ }
   
   
   
