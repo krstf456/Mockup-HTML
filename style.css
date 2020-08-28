@@ -92,7 +92,13 @@ nav {
 .item {
     display: none;
 }
+.toogle {
+    display: flex;
+    font-size: 40px;
 }
+
+}
+
 
 
 
